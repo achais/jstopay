@@ -33,7 +33,7 @@ class UnicomAync extends AbstractAPI
     {
         $url = $this->getBaseUrl() . '/unicomAync/queryBizOrder.do';
         $params = [
-            'serialNo' => $serialNo,
+            'serialno' => $serialNo,
         ];
         return $this->parseJSON('post', [$url, $params]);
     }
