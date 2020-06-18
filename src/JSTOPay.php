@@ -175,7 +175,7 @@ class JSTOPay extends Container
         }
 
         $sign = $params['sign'];
-        unset($params['sign']);
+        unset($params['sign'], $params['voucher'], $params['voucherType']);
 
         $signRaw = $this->httpBuildKSortQuery($params) . $this['config']->get('key', '');
 
